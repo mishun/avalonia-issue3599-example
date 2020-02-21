@@ -1,0 +1,20 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:local="clr-namespace:Test"
+        Title="Test">
+
+  <TabControl>
+    <TabItem Header="Clock">
+      <StackPanel DataContext="{Binding ClockModel}">
+        <local:MyControl Time="{Binding Clock^}" />
+      </StackPanel>
+    </TabItem>
+
+    <TabItem Header="Something else">
+    </TabItem>
+  </TabControl>
+</Window>
